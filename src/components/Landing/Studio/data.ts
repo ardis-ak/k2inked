@@ -10,7 +10,7 @@ type TarotItem = {
   src: string;
   alt: string;
   flippedSrc: string;
-  flippedAlt?: string;
+  flippedAlt: string;
   content: string;
 };
 
