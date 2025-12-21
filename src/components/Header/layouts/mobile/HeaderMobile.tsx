@@ -23,7 +23,21 @@ export const HeaderMobile = ({
   const [scrolledPastHero, setScrolledPastHero] = useState(
     effectiveVariant === "default",
   );
+
   const direction = useScrollDirection();
+
+  const [mounted, setMounted] = useState(false);
+
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    setMounted(true);
+    setScrollY(window.scrollY);
+
+    const onScroll = () => setScrollY(window.scrollY);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   useEffect(() => {
     if (effectiveVariant !== "hero") {
@@ -43,14 +57,15 @@ export const HeaderMobile = ({
     return () => io.disconnect();
   }, [effectiveVariant]);
 
-  const nearTop = typeof window !== "undefined" ? window.scrollY < 16 : true;
+  const nearTop = !mounted ? true : scrollY < 16;
 
   const shouldHide =
+    mounted &&
     !isMenuOpen &&
     scrolledPastHero &&
     !nearTop &&
     direction === "down" &&
-    (typeof window === "undefined" ? false : window.scrollY > 64);
+    scrollY > 64;
 
   return (
     <div
