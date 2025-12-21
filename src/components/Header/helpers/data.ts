@@ -24,6 +24,7 @@ const ARTIST_LABEL: Record<ArtistSlug, string> = {
   ewelina: "EWELINA",
   mirella: "MIRELLA",
   emi: "EMI",
+  kuba: "KUBA",
 } as const;
 
 const artistLink = (slug: ArtistSlug): NavLink => ({
@@ -34,7 +35,7 @@ const artistLink = (slug: ArtistSlug): NavLink => ({
 });
 
 const tattooArtists = (
-  ["klaudia", "kari", "sonia", "ewelina", "mirella"] as const
+  ["klaudia", "kari", "sonia", "ewelina", "mirella", "kuba"] as const
 ).map(artistLink);
 
 const piercingArtists = (["emi"] as const).map(artistLink);

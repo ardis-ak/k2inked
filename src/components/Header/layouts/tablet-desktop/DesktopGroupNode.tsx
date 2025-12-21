@@ -68,14 +68,14 @@ export const DesktopGroupNode = ({ node, pathname, renderLink }: Props) => {
       {open && (
         <div
           role="menu"
-          className="bg-dark/95 absolute top-full tablet:-left-20 desktop:-left-25 mt-2 desktop:w-70 tablet:w-60 rounded-b-md p-4 shadow-lg ring-1 ring-white/10"
+          className="bg-dark/95 tablet:-left-20 desktop:-left-25 desktop:w-70 tablet:w-60 absolute top-full mt-1 rounded-b-md p-4 shadow-lg ring-1 ring-white/10"
         >
           {sections.map((section, i) => (
             <div
               key={i}
               className={i > 0 ? "mt-2 border-t border-white/10 pt-2" : ""}
             >
-              <div className="mb-2 text-center text-base tracking-[0.18em]">
+              <div className="mb-1 text-center text-base tracking-[0.18em]">
                 {section.label}
               </div>
               <ul className="hover:!text-light space-y-1">
@@ -84,7 +84,7 @@ export const DesktopGroupNode = ({ node, pathname, renderLink }: Props) => {
 
                   return (
                     <li key={`${i}-${j}`}>
-                      <div className="hover:bg-primary cursor-pointer rounded-tr-md rounded-bl-md px-6 py-2 text-base tracking-[0.12em]">
+                      <div className="hover:bg-primary cursor-pointer rounded-tr-md rounded-bl-md px-6 py-2 tablet:py-1.5 text-base tracking-[0.12em]">
                         {renderLink(item)}
                       </div>
                     </li>
