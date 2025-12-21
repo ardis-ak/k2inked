@@ -152,6 +152,24 @@ export const TEAM = {
       ogImage: "/og/emi-og.jpg",
     },
   },
+   kuba: {
+    name: "Kuba",
+    imgSrc: "/images/team/image00013.jpeg",
+    hoverImgSrc: "/images/team/image00014.jpeg",
+    style: "ryciny / blackwork / lettering",
+    paragraph: [
+  
+    ],
+    gallery: buildGallery("kuba", 10),
+    instagramUsername: "krzywy_mir_tattoo",
+    seo: {
+      title: "Kuba — tatuaż blackwork, ryciny, lettering | K2.inked",
+      description:
+        "",
+      keywords: ["tatuaż Warszawa", "tattoo Warsaw", "Kuba K2"],
+      ogImage: "/og/kuba-og.jpg",
+    },
+  },
 } satisfies Record<ArtistSlug, BaseTeamMember>;
 
 export type TeamMember = {
