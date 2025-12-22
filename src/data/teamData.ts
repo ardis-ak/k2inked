@@ -85,7 +85,7 @@ export const TEAM = {
       description:
         "Sonia z K2.inked w Warszawie tworzy tatuaże w stylu fine line i ornamentów. Zobacz jej portfolio i umów wizytę.",
       keywords: ["tatuaż fine line Warszawa", "fine line tattoo", "Sonia K2"],
-      ogImage: "/og/sonia-og.jpg", 
+      ogImage: "/og/sonia-og.jpg",
     },
   },
   ewelina: {
@@ -152,20 +152,23 @@ export const TEAM = {
       ogImage: "/og/emi-og.jpg",
     },
   },
-   kuba: {
+  kuba: {
     name: "Kuba",
     imgSrc: "/images/team/image00013.jpeg",
     hoverImgSrc: "/images/team/image00014.jpeg",
     style: "ryciny / blackwork / lettering",
     paragraph: [
-  
+      "Jakub ma w sobie ogromne pokłady pozytywnej energii, zaskoczy Cię niejedną ciekawostką m.i. o kosmosie czy układzie pokarmowym Koali!",
+      "Zgodnie z ideałami jakie reprezentuje w tatuowaniu, uważa że nie ma nic lepszego niż stworzenie czegoś super indywidualnego z motywów przyniesionych przez klienta. Projekty są rysowane prosto z głowy, nieraz odręcznie na papierze.",
+      "Najbardziej lubi projekty wielkoformatowe dopasowane do anatomii, fascynuje go słowiańska mitologia i inne „nerdowskie odklejki” - czyli projekty ze znanych serii „Władcy Pierścieni”, „Star Wars” czy „Wiedźmin” i serii anime!",
+      "Tatuuje w stylach takich jak blackwork, średniowieczne ryciny pomieszane z newschoolowym sznytem, oraz lettering w mocniejszych fontach - gotyckich, germańskich i autorskich, ale nie ogranicza się tylko do nich.",
     ],
     gallery: buildGallery("kuba", 10),
     instagramUsername: "krzywy_mir_tattoo",
     seo: {
       title: "Kuba — tatuaż blackwork, ryciny, lettering | K2.inked",
       description:
-        "",
+        "Kuba z K2.inked w Warszawie tworzy tatuaże w stylu blackwork, rycin i letteringu. Zobacz jego portfolio i umów wizytę.",
       keywords: ["tatuaż Warszawa", "tattoo Warsaw", "Kuba K2"],
       ogImage: "/og/kuba-og.jpg",
     },
